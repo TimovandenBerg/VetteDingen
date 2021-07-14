@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *, *::after, *::before {
     padding: 0;
     margin: 0;
@@ -6,6 +9,15 @@
 
 :root {
     /* Hier komen de fonts en kleuren   */
+    --clr-prim: #FFF6F4;
+    --clr-seco: #C93F3F;
+    --clr-drie: #81AFE1; 
+    --clr-vier: #D8F3FF;
+    --clr-vijf: #5E7998;
+    --clr-zes : #D9928A;
+
+    --fnt-roboto: 'Roboto', sans-serif;
+    --fnt-poppins: 'Poppins', sans-serif;
 }
 
 html {
@@ -14,4 +26,26 @@ html {
 
 body {
     font-size: 1.8rem;
+}
+
+/* Dit zijn de utility classes en modificaties die voor iedereen geldt die */
+header {
+    width: 100vw;
+}
+
+.u--main-mobile {
+    width: 80%;
+    margin: 0 auto;
+}
+.u--main-tablet {
+    width: 75%;
+    margin: 0 auto;
+}
+.u--main-desktop {
+    width:70%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100vw;
 }
