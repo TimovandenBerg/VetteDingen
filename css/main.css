@@ -16,6 +16,9 @@
     --clr-vijf: #5E7998;
     --clr-zes : #D9928A;
 
+    --ani-1-dark:   #635BFF;
+    --ani-1-light:  #80E9FF;
+
     --fnt-roboto: 'Roboto', sans-serif;
     --fnt-poppins: 'Poppins', sans-serif;
 }
@@ -26,13 +29,47 @@ html {
 
 body {
     font-size: 1.8rem;
+    background-color: var(--clr-seco);
 }
+
+svg {
+    cursor: pointer;
+}
+
+/* Eerste Animatie */
+#darkGroup {
+    fill: var(--ani-1-dark);
+}
+
+#White1 {
+    fill: var(--ani-1-light);
+}
+
+#Dark1, 
+#White1,
+#Dark2 {
+    transition: all 1s ease;
+}
+
+#Dark2 {
+    transform: translateX(-100%);
+}
+
+svg:hover #White1 {
+    transform: translateX(20%);
+}
+svg:hover #Dark1 {
+    transform: translateX(40%);
+    opacity: 0;
+}
+svg:hover #Dark2 {
+    transform: translateX(0%);
+}
+
+
+
 
 /* Dit zijn de utility classes en modificaties die voor iedereen geldt die */
-header {
-    width: 100vw;
-}
-
 .u--main-mobile {
     width: 80%;
     margin: 0 auto;
