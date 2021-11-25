@@ -32,8 +32,37 @@ body {
     background-color: var(--clr-seco);
 }
 
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 svg {
     cursor: pointer;
+}
+
+h2 {
+    font-family: var(--fnt-roboto);
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: var(--fnt-poppins);
+    font-size: 1.4rem;
+}
+
+.main__kaart {
+    background-color: var(--clr-prim);
+    max-width: 18rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10%;
 }
 
 /* Eerste Animatie */
@@ -69,7 +98,7 @@ svg:hover #Dark2 {
 
 
 
-/* Dit zijn de utility classes en modificaties die voor iedereen geldt die */
+/* Dit zijn de utility classes en modificaties die voor iedereen geldt */
 .u--main-mobile {
     width: 80%;
     margin: 0 auto;
@@ -85,4 +114,11 @@ svg:hover #Dark2 {
 
 footer {
     width: 100vw;
+}
+
+@media screen and (min-width: 400px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
