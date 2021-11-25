@@ -6,7 +6,7 @@
 
 #ani2--dark1 {
     fill: var(--ani-2-dark);
-        
+    transform: translateY(-15%);       
 }
 
 #ani2--dark2 {
