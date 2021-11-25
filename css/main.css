@@ -65,39 +65,6 @@ p {
     border-radius: 10%;
 }
 
-/* Eerste Animatie */
-#darkGroup {
-    fill: var(--ani-1-dark);
-}
-
-#White1 {
-    fill: var(--ani-1-light);
-}
-
-#Dark1, 
-#White1,
-#Dark2 {
-    transition: all 1s ease;
-}
-
-#Dark2 {
-    transform: translateX(-100%);
-}
-
-svg:hover #White1 {
-    transform: translateX(20%);
-}
-svg:hover #Dark1 {
-    transform: translateX(40%);
-    opacity: 0;
-}
-svg:hover #Dark2 {
-    transform: translateX(0%);
-}
-
-
-
-
 /* Dit zijn de utility classes en modificaties die voor iedereen geldt */
 .u--main-mobile {
     width: 80%;
@@ -120,5 +87,15 @@ footer {
     main {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 700px) {
+    main {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 900px) {
+    main {
+        width: 70%;
     }
 }

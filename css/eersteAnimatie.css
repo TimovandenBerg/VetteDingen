@@ -1,0 +1,31 @@
+@import "main.css";
+
+/* Eerste Animatie */
+#darkGroup {
+    fill: var(--ani-1-dark);
+}
+
+#ani1--white1 {
+    fill: var(--ani-1-light);
+}
+
+#ani1--dark1, 
+#ani1--white1,
+#ani1--dark2 {
+    transition: all 1s ease;
+}
+
+#ani1--dark2 {
+    transform: translateX(-100%);
+}
+
+svg:hover #ani1--white1 {
+    transform: translateX(20%);
+}
+svg:hover #ani1--dark1 {
+    transform: translateX(40%);
+    opacity: 0;
+}
+svg:hover #ani1--dark2 {
+    transform: translateX(0%);
+}
