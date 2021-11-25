@@ -1,0 +1,60 @@
+@import "main.css";
+
+#ani3--raind1,
+#ani3--raind2,
+#ani3--raind3,
+#ani3--pool {
+    fill: var(--ani-3-blue);   
+}
+
+#ani3--raind2,
+#ani3--raind3,
+#ani3--pool {
+    opacity: 0;
+}
+
+#ani3--raind3 {
+    transition: 2s ease;
+    transition-delay: 6s;
+}
+
+.main__kaart__svg__water {
+    height: 1rem;
+    width: 100%;
+    background-color: blue;
+}
+
+svg:hover #ani3--raind1 {
+    animation-name: opacity;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+svg:hover #ani3--raind2 {
+    animation-name: opacity;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+svg:hover #ani3--raind3 {
+    animation-name: fallingDrop;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+svg:hover #ani3--pool {
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-delay: 6.5s;
+}
+
+ @keyframes opacity {
+     from {opacity: 0;}
+     to {opacity: 0.7;}
+ }
+ @keyframes fallingDrop {
+    0% {opacity: 0;}
+    80% {opacity: 0.7; transform: translateY(0%);}
+    100% {transform: translateY(50%);}
+ }

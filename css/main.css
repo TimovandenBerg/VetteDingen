@@ -9,18 +9,20 @@
 
 :root {
     /* Hier komen de fonts en kleuren   */
-    --clr-prim: #FFF6F4;
-    --clr-seco: #C93F3F;
-    --clr-drie: #81AFE1; 
-    --clr-vier: #D8F3FF;
-    --clr-vijf: #5E7998;
-    --clr-zes : #D9928A;
+    --clr-prim:     #FFF6F4;
+    --clr-seco:     #C93F3F;
+    --clr-drie:     #81AFE1; 
+    --clr-vier:     #D8F3FF;
+    --clr-vijf:     #5E7998;
+    --clr-zes :     #D9928A;
 
     --ani-1-dark:   #635BFF;
     --ani-1-light:  #80E9FF;
 
     --ani-2-dark:   #81AFE1; 
     --ani-2-white:  #D9928A;
+
+    --ani-3-blue:   #0081CF; 
 
     --fnt-roboto: 'Roboto', sans-serif;
     --fnt-poppins: 'Poppins', sans-serif;
@@ -60,6 +62,7 @@ p {
 
 .main__kaart {
     background-color: var(--clr-prim);
+    max-height: 225px;
     max-width: 18rem;
     padding-right: 2rem;
     padding-left: 2rem;
