@@ -10,6 +10,7 @@ svg.onclick = (e) => {
     const rando = () => colors[Math.floor(Math.random() * colors.length)];
     for (i = 0; i < groepen.length; i++) {
         nieuweKleur = rando();
+        // Code om wellicht ervoor te zorgen dat niet dezelfde kleur wordt uitgekozen, werkt nog niet.
         // while (oudeKleur === nieuweKleur) {
         //     nieuweKleur = rando();
         //     console.log("Zijn hetzelfde");
