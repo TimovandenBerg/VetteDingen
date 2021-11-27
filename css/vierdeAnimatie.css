@@ -1,0 +1,25 @@
+@import "main.css";
+
+#ani4--elem1 {
+    fill: var(--ani4-purple);
+    position: absolute;
+    transition: linear;
+    animation-name: rotateSlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#ani4--elem2 {
+    fill: var(--ani4-blue);
+}
+#ani4--elem3 {
+    fill: var(--ani4-green);
+}
+
+svg:hover #ani4--elem1 {
+    animation-name: rotateSlow;
+    animation-duration: 2s;
+}
+
+@keyframes rotateSlow {
+    100% {transform: rotate(360deg);}
+}
