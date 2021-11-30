@@ -2,11 +2,6 @@
 
 #ani4--elem1 {
     fill: var(--ani4-purple);
-    position: absolute;
-    transition: linear;
-    animation-name: rotateSlow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 #ani4--elem2 {
     fill: var(--ani4-blue);
@@ -15,10 +10,12 @@
     fill: var(--ani4-green);
 }
 
-svg:hover #ani4--elem1 {
-    animation-name: rotateSlow;
-    animation-duration: 2s;
+#ani4--elem1,
+#ani4--elem3 {
+    transform-origin: center;
+    animation: rotateSlow 2s linear infinite;
 }
+
 
 @keyframes rotateSlow {
     100% {transform: rotate(360deg);}
